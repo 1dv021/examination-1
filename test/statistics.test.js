@@ -2,7 +2,7 @@
  * Tests for analyze().
  *
  * @author Mats Loock
- * @version 1.0.0
+ * @version 1.0.1
  */
 
 "use strict";
@@ -10,9 +10,8 @@
 var statistics = require("../src/statistics");
 var expect = require("chai").expect;
 
-describe("analyze", function() {
-
-    // Exceptions
+// Exceptions
+describe("exceptions", function() {
     it("analyze(null]; should throw TypeError", function(done) {
         expect(function() { statistics.analyze(null); }).to.throw(TypeError);
         done();
@@ -22,8 +21,20 @@ describe("analyze", function() {
         expect(function() { statistics.analyze([]); }).to.throw(Error);
         done();
     });
+});
 
-    // Return values
+// Arguments
+describe("arguments", function() {
+    it("analyze([9, 2, 3, 7, 4, 1, 8, 6, 5]; should not modify the argument", function(done) {
+        var arg = [4, 2, 6, 1, 3, 7, 5, 3];
+        statistics.analyze(arg);
+        expect(arg).to.eql([4, 2, 6, 1, 3, 7, 5, 3]);
+        done();
+    });
+});
+
+// Return values
+describe("return values", function() {
     it("analyze([4, 2, 6, 1, 3, 7, 5, 3]; should return {{max: 7, mean: 4, median: 4, min: 1, mode: [3], range: 6}}", function(done) {
         expect(statistics.analyze([4, 2, 6, 1, 3, 7, 5, 3])).to.eql({max: 7, mean: 3.875, median: 3.5, min: 1, mode: [3], range: 6});
         done();

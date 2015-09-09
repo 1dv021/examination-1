@@ -3,7 +3,8 @@
 ***
 ###OBS! OBS! OBS!
 - Detta är en **obligatorisk** och **examinerande** uppgift som **du ska lösa helt på egen hand**.
-- Du måste göra **regelbundna "commits" och "pushes"** av koden till ditt repositorium för uppgiften för att kursledningen ska kunna följa ditt arbetet med uppgiften.  
+- Du måste göra **regelbundna "commits" och "pushes"** av koden till ditt repositorium för uppgiften för att kursledningen ska kunna följa ditt arbetet med uppgiften.
+- Du ska kunna förklara alla konstruktioner och satser som din lösning av uppgiften innehåller.  
 ***
 
 Beskrivande statistik (eller *deskriptiv statistik*; eng. "*descriptive statistics*") är ett sätt att reducera stora datamängder för att presentera en sammanfattning av datamängden.
