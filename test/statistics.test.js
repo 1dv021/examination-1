@@ -35,7 +35,7 @@ describe("arguments", function() {
 
 // Return values
 describe("return values", function() {
-    it("analyze([4, 2, 6, 1, 3, 7, 5, 3]; should return {{max: 7, mean: 4, median: 4, min: 1, mode: [3], range: 6}}", function(done) {
+    it("analyze([4, 2, 6, 1, 3, 7, 5, 3]; should return {{max: 7, mean: 3.875, median: 3.5, min: 1, mode: [3], range: 6}}", function(done) {
         expect(statistics.analyze([4, 2, 6, 1, 3, 7, 5, 3])).to.eql({max: 7, mean: 3.875, median: 3.5, min: 1, mode: [3], range: 6});
         done();
     });
