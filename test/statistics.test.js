@@ -45,7 +45,7 @@ describe("return values", function() {
         done();
     });
 
-    it("analyze([5, 1, 1, 1, 3, -2, 2, 5, 7, 4, 5, 16]); should return {max: 6, mean: 3.3, median: 3.5, min: -1, mode: [1], range: 5}", function(done) {
+    it("analyze([5, 1, 1, 1, 3, -2, 2, 5, 7, 4, 5, 16]); should return {max: 16, mean: 4, median: 3.5, min: -2, mode: [1, 5], range: 18}", function(done) {
         expect(statistics.analyze([5, 1, 1, 1, 3, -2, 2, 5, 7, 4, 5, 16])).to.eql({max: 16, mean: 4, median: 3.5, min: -2, mode: [1, 5], range: 18});
         done();
     });
