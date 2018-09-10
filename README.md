@@ -1,7 +1,7 @@
 # 1 - Beskrivande statistik
 
 - Examinationsuppgift 1
-- [GitBook](https://coursepress.gitbooks.io/1dv021/content/examinationsuppgifter/examinationsuppgift-1/)
+- [GitBook](https://coursepress.gitbook.io/1dv021/examinationsuppgifter/1-beskrivande-statistik)
 
 >__VIKTIGT!__ Innan du börjar arbeta med examinationsuppgiften är det viktigt att du lägger till examinationsuppgiftens repo till ditt repo för examinationsuppgiften.
 
