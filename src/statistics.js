@@ -12,9 +12,9 @@
  * mode, range and standard deviation) from a set of numbers.
  *
  * @param {number[]} numbers The set of data to be analyzed.
- * @throws {TypeError} The argument must be an array.
- * @throws {Error} The argument can not be an empty array.
- * @throws {TypeError} The argument must be an array containing just numbers.
+ * @throws {TypeError} The passed argument is not an array.
+ * @throws {Error} The passed array contains no elements.
+ * @throws {TypeError} The passed array contains not just numbers.
  * @returns {{maximum: number, mean: number, median: number, minimum: number, mode: number[], range: number, standardDeviation: number}}
  */
 function descriptiveStatistics (numbers) {
