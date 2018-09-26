@@ -17,7 +17,7 @@ describe('maximum', () => {
     expect(() => {
       statistics.maximum(null)
     }).to.throw(TypeError).and
-    .to.have.property('message', 'The passed argument is not an array.')
+      .to.have.property('message', 'The passed argument is not an array.')
     done()
   })
 
@@ -25,7 +25,7 @@ describe('maximum', () => {
     expect(() => {
       statistics.maximum([])
     }).to.throw(Error).and
-    .to.have.property('message', 'The passed array contains no elements.')
+      .to.have.property('message', 'The passed array contains no elements.')
     done()
   })
 
@@ -33,7 +33,7 @@ describe('maximum', () => {
     expect(() => {
       statistics.maximum([1, 2, 3, '4'])
     }).to.throw(TypeError).and
-    .to.have.property('message', 'The passed array contains not just numbers.')
+      .to.have.property('message', 'The passed array contains not just numbers.')
     done()
   })
 
@@ -65,7 +65,7 @@ describe('mean', () => {
     expect(() => {
       statistics.mean(null)
     }).to.throw(TypeError).and
-    .to.have.property('message', 'The passed argument is not an array.')
+      .to.have.property('message', 'The passed argument is not an array.')
     done()
   })
 
@@ -73,7 +73,7 @@ describe('mean', () => {
     expect(() => {
       statistics.mean([])
     }).to.throw(Error).and
-    .to.have.property('message', 'The passed array contains no elements.')
+      .to.have.property('message', 'The passed array contains no elements.')
     done()
   })
 
@@ -81,7 +81,7 @@ describe('mean', () => {
     expect(() => {
       statistics.mean([1, 2, 3, '4'])
     }).to.throw(TypeError).and
-    .to.have.property('message', 'The passed array contains not just numbers.')
+      .to.have.property('message', 'The passed array contains not just numbers.')
     done()
   })
 
@@ -113,7 +113,7 @@ describe('median', () => {
     expect(() => {
       statistics.median(null)
     }).to.throw(TypeError).and
-    .to.have.property('message', 'The passed argument is not an array.')
+      .to.have.property('message', 'The passed argument is not an array.')
     done()
   })
 
@@ -121,7 +121,7 @@ describe('median', () => {
     expect(() => {
       statistics.median([])
     }).to.throw(Error).and
-    .to.have.property('message', 'The passed array contains no elements.')
+      .to.have.property('message', 'The passed array contains no elements.')
     done()
   })
 
@@ -129,7 +129,7 @@ describe('median', () => {
     expect(() => {
       statistics.median([1, 2, 3, '4'])
     }).to.throw(TypeError).and
-    .to.have.property('message', 'The passed array contains not just numbers.')
+      .to.have.property('message', 'The passed array contains not just numbers.')
     done()
   })
 
@@ -161,7 +161,7 @@ describe('minimum', () => {
     expect(() => {
       statistics.minimum(null)
     }).to.throw(TypeError).and
-    .to.have.property('message', 'The passed argument is not an array.')
+      .to.have.property('message', 'The passed argument is not an array.')
     done()
   })
 
@@ -169,7 +169,7 @@ describe('minimum', () => {
     expect(() => {
       statistics.minimum([])
     }).to.throw(Error).and
-    .to.have.property('message', 'The passed array contains no elements.')
+      .to.have.property('message', 'The passed array contains no elements.')
     done()
   })
 
@@ -177,7 +177,7 @@ describe('minimum', () => {
     expect(() => {
       statistics.minimum([1, 2, 3, '4'])
     }).to.throw(TypeError).and
-    .to.have.property('message', 'The passed array contains not just numbers.')
+      .to.have.property('message', 'The passed array contains not just numbers.')
     done()
   })
 
@@ -209,7 +209,7 @@ describe('mode', () => {
     expect(() => {
       statistics.mode(null)
     }).to.throw(TypeError).and
-    .to.have.property('message', 'The passed argument is not an array.')
+      .to.have.property('message', 'The passed argument is not an array.')
     done()
   })
 
@@ -217,7 +217,7 @@ describe('mode', () => {
     expect(() => {
       statistics.mode([])
     }).to.throw(Error).and
-    .to.have.property('message', 'The passed array contains no elements.')
+      .to.have.property('message', 'The passed array contains no elements.')
     done()
   })
 
@@ -225,7 +225,7 @@ describe('mode', () => {
     expect(() => {
       statistics.mode([1, 2, 3, '4'])
     }).to.throw(TypeError).and
-    .to.have.property('message', 'The passed array contains not just numbers.')
+      .to.have.property('message', 'The passed array contains not just numbers.')
     done()
   })
 
@@ -277,7 +277,7 @@ describe('range', () => {
     expect(() => {
       statistics.range(null)
     }).to.throw(TypeError).and
-    .to.have.property('message', 'The passed argument is not an array.')
+      .to.have.property('message', 'The passed argument is not an array.')
     done()
   })
 
@@ -285,7 +285,7 @@ describe('range', () => {
     expect(() => {
       statistics.range([])
     }).to.throw(Error).and
-    .to.have.property('message', 'The passed array contains no elements.')
+      .to.have.property('message', 'The passed array contains no elements.')
     done()
   })
 
@@ -293,7 +293,7 @@ describe('range', () => {
     expect(() => {
       statistics.range([1, 2, 3, '4'])
     }).to.throw(TypeError).and
-    .to.have.property('message', 'The passed array contains not just numbers.')
+      .to.have.property('message', 'The passed array contains not just numbers.')
     done()
   })
 
@@ -325,7 +325,7 @@ describe('standardDeviation', () => {
     expect(() => {
       statistics.standardDeviation(null)
     }).to.throw(TypeError).and
-    .to.have.property('message', 'The passed argument is not an array.')
+      .to.have.property('message', 'The passed argument is not an array.')
     done()
   })
 
@@ -333,7 +333,7 @@ describe('standardDeviation', () => {
     expect(() => {
       statistics.standardDeviation([])
     }).to.throw(Error).and
-    .to.have.property('message', 'The passed array contains no elements.')
+      .to.have.property('message', 'The passed array contains no elements.')
     done()
   })
 
@@ -341,7 +341,7 @@ describe('standardDeviation', () => {
     expect(() => {
       statistics.standardDeviation([1, 2, 3, '4'])
     }).to.throw(TypeError).and
-    .to.have.property('message', 'The passed array contains not just numbers.')
+      .to.have.property('message', 'The passed array contains not just numbers.')
     done()
   })
 
@@ -373,7 +373,7 @@ describe('descriptiveStatistics', () => {
     expect(() => {
       statistics.descriptiveStatistics(null)
     }).to.throw(TypeError).and
-    .to.have.property('message', 'The passed argument is not an array.')
+      .to.have.property('message', 'The passed argument is not an array.')
     done()
   })
 
@@ -381,7 +381,7 @@ describe('descriptiveStatistics', () => {
     expect(() => {
       statistics.descriptiveStatistics([])
     }).to.throw(Error).and
-    .to.have.property('message', 'The passed array contains no elements.')
+      .to.have.property('message', 'The passed array contains no elements.')
     done()
   })
 
@@ -389,7 +389,7 @@ describe('descriptiveStatistics', () => {
     expect(() => {
       statistics.descriptiveStatistics([1, 2, 3, '4'])
     }).to.throw(TypeError).and
-    .to.have.property('message', 'The passed array contains not just numbers.')
+      .to.have.property('message', 'The passed array contains not just numbers.')
     done()
   })
 

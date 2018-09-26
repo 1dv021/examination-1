@@ -18,7 +18,7 @@
  * @returns {{maximum: number, mean: number, median: number, minimum: number, mode: number[], range: number, standardDeviation: number}}
  */
 function descriptiveStatistics (numbers) {
-    // TODO: Write your code here.
+  // TODO: Write your code here.
 }
 
 // TODO: Write your code here.
