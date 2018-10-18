@@ -47,15 +47,8 @@
     "test": "mocha --recursive ./test"
   },
   "standard": {
-    "globals": [
-      "describe",
-      "context",
-      "before",
-      "beforeEach",
-      "after",
-      "afterEach",
-      "it",
-      "expect"
+    "ignore": [
+      "/test/",
     ]
   }
 }
