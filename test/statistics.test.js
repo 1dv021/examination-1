@@ -397,7 +397,7 @@ describe('descriptiveStatistics', () => {
   it('descriptiveStatistics([4, 2, 6, 1, 3, 7, 5, 3]) should return a number and not modify the argument', done => {
     let arg = [4, 2, 6, 1, 3, 7, 5, 3]
     let res = statistics.descriptiveStatistics(arg)
-    expect(res).to.be.an('object').that.includes({maximum: 7})
+    expect(res).to.be.an('object').that.includes({ maximum: 7 })
     expect(arg).to.eql([4, 2, 6, 1, 3, 7, 5, 3])
     done()
   })
