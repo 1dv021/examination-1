@@ -12,7 +12,6 @@ const { expect } = require('chai')
 
 /* eslint-env mocha */
 
-
 describe('statistics', () => {
   // ------------------------------------------------------------------ maximum
   describe('#maximum()', () => {
@@ -394,7 +393,7 @@ describe('statistics', () => {
     it('Passing an array with numbers should not modify the passed array returning an object', () => {
       let arg = [4, 2, 6, 1, 3, 7, 5, 3]
       let res = statistics.descriptiveStatistics(arg)
-      expect(res).to.be.an('object') //.that.includes({ maximum: 7 })
+      expect(res).to.be.an('object') // .that.includes({ maximum: 7 })
       expect(arg).to.eql([4, 2, 6, 1, 3, 7, 5, 3])
     })
 

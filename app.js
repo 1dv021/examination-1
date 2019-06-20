@@ -2,7 +2,7 @@
  * The starting point of the application.
  *
  * @author Mats Loock
- * @version 1.1.0
+ * @version 1.2.0
  */
 
 'use strict'

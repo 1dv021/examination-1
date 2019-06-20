@@ -2,7 +2,7 @@
  * Module for obtaining descriptive information about a set of data.
  *
  * @author TODO: Write your name here.
- * @version 1.1.0
+ * @version 1.2.0
  */
 
 'use strict'

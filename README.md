@@ -3,15 +3,19 @@
 - Examinationsuppgift 1
 - [GitBook](https://coursepress.gitbook.io/1dv021/examinationsuppgifter/1-beskrivande-statistik)
 
->__VIKTIGT!__ Innan du börjar arbeta med examinationsuppgiften är det viktigt att du lägger till examinationsuppgiftens repo till ditt repo för examinationsuppgiften.
+>__VIKTIGT!__
+>
+> Innan du börjar arbeta med examinationsuppgiften är det viktigt att du lägger till examinationsuppgiftens repo till ditt repo för examinationsuppgiften.
+>
+>     git clone https://github.com/1dv021/example-username-examination-1.git
+>     cd example-username-examination-1
+>     git pull https://github.com/1dv021/examination-1.git
 
-***
-
-### OBS! OBS! OBS!
-
-- Detta är en **obligatorisk** och **examinerande** uppgift som **du ska lösa helt på egen hand**.
-- Du måste göra **regelbundna "commits" och "pushes"** av koden till ditt repo för uppgiften för att kursledningen ska kunna följa ditt arbetet med uppgiften.
-- Du ska kunna förklara samtliga konstruktioner och satser som din lösning av uppgiften innehåller.
+> **OBS! OBS! OBS!**
+>
+> - Detta är en **obligatorisk** och **examinerande** uppgift som **du ska lösa helt på egen hand**.
+> - Du måste göra **regelbundna "commits" och "pushes"** av koden till ditt repo för uppgiften för att kursledningen ska kunna följa ditt arbetet med uppgiften.
+> - Du ska kunna förklara samtliga konstruktioner och satser som din lösning av uppgiften innehåller.
 
 ***
 
@@ -35,7 +39,7 @@ Modulen ska exportera funktioner som kan bestämma maximum- och minimumvärden, 
 *
 * @module src/statistics.js
 * @author TODO: Write your name here.
-* @version 1.1.0
+* @version 1.2.0
 */
 
 'use strict'
@@ -79,7 +83,7 @@ De exporterade funktionerna ska kasta undantag (men inte fånga några!).
 
 Undvik om lämpligt att upprepa kod och bryt därför inte mot principen DRY ("don't repeat yourself").
 
-Dokumentera funktionerna genom att använda JSDOC-kommentarer (beskrivning ska finnas och dokumentation av parametrar, kastade undatag och returvärden). Använd även radkommentarer innuti funktioner i de fall det är befogat.
+Dokumentera funktionerna genom att använda JSDOC-kommentarer (beskrivning ska finnas och dokumentation av parametrar, kastade undantag och returvärden). Använd även radkommentarer inuti funktioner i de fall det är befogat.
 
 ## Tips
 
