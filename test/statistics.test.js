@@ -16,7 +16,7 @@ describe('statistics', () => {
   // ------------------------------------------------------------------ maximum
   describe('#maximum()', () => {
     // exceptions
-    it(`Passing anything but an array should throw TypeError with the message 'The passed argument is not an array.'`, () => {
+    it('Passing anything but an array should throw TypeError with the message \'The passed argument is not an array.\'', () => {
       expect(() => {
         statistics.maximum(1)
         statistics.maximum('not an array')
@@ -28,14 +28,14 @@ describe('statistics', () => {
         .to.have.property('message', 'The passed argument is not an array.')
     })
 
-    it(`Passing an empty array should throw Error with the message 'The passed array contains no elements.'`, () => {
+    it('Passing an empty array should throw Error with the message \'The passed array contains no elements.\'', () => {
       expect(() => {
         statistics.maximum([])
       }).to.throw(Error).and
         .to.have.property('message', 'The passed array contains no elements.')
     })
 
-    it(`Passing an array of not just numbers should throw TypeError with the message 'The passed array contains not just numbers.'`, () => {
+    it('Passing an array of not just numbers should throw TypeError with the message \'The passed array contains not just numbers.\'', () => {
       expect(() => {
         statistics.maximum([1, 2, 3, '4'])
       }).to.throw(TypeError).and
@@ -44,8 +44,8 @@ describe('statistics', () => {
 
     // no effect on the argument
     it('Passing an array with numbers should not modify the passed array returning a number', () => {
-      let arg = [4, 2, 6, 1, 3, 7, 5, 3]
-      let res = statistics.maximum(arg)
+      const arg = [4, 2, 6, 1, 3, 7, 5, 3]
+      const res = statistics.maximum(arg)
       expect(res).to.be.an('number')
       expect(arg).to.eql([4, 2, 6, 1, 3, 7, 5, 3])
     })
@@ -63,7 +63,7 @@ describe('statistics', () => {
   // ------------------------------------------------------------------ mean
   describe('#mean()', () => {
     // exceptions
-    it(`Passing anything but an array should throw TypeError with the message 'The passed argument is not an array.'`, () => {
+    it('Passing anything but an array should throw TypeError with the message \'The passed argument is not an array.\'', () => {
       expect(() => {
         statistics.mean(1)
         statistics.mean('not an array')
@@ -75,14 +75,14 @@ describe('statistics', () => {
         .to.have.property('message', 'The passed argument is not an array.')
     })
 
-    it(`Passing an empty array should throw Error with the message 'The passed array contains no elements.'`, () => {
+    it('Passing an empty array should throw Error with the message \'The passed array contains no elements.\'', () => {
       expect(() => {
         statistics.mean([])
       }).to.throw(Error).and
         .to.have.property('message', 'The passed array contains no elements.')
     })
 
-    it(`Passing an array of not just numbers should throw TypeError with the message 'The passed array contains not just numbers.'`, () => {
+    it('Passing an array of not just numbers should throw TypeError with the message \'The passed array contains not just numbers.\'', () => {
       expect(() => {
         statistics.mean([1, 2, 3, '4'])
       }).to.throw(TypeError).and
@@ -91,8 +91,8 @@ describe('statistics', () => {
 
     // no effect on the argument
     it('Passing an array with numbers should not modify the passed array returning a number', () => {
-      let arg = [4, 2, 6, 1, 3, 7, 5, 3]
-      let res = statistics.mean(arg)
+      const arg = [4, 2, 6, 1, 3, 7, 5, 3]
+      const res = statistics.mean(arg)
       expect(res).to.be.an('number')
       expect(arg).to.eql([4, 2, 6, 1, 3, 7, 5, 3])
     })
@@ -110,7 +110,7 @@ describe('statistics', () => {
   // ------------------------------------------------------------------ median
   describe('#median()', () => {
     // exceptions
-    it(`Passing anything but an array should throw TypeError with the message 'The passed argument is not an array.'`, () => {
+    it('Passing anything but an array should throw TypeError with the message \'The passed argument is not an array.\'', () => {
       expect(() => {
         statistics.median(1)
         statistics.median('not an array')
@@ -122,14 +122,14 @@ describe('statistics', () => {
         .to.have.property('message', 'The passed argument is not an array.')
     })
 
-    it(`Passing an empty array should throw Error with the message 'The passed array contains no elements.'`, () => {
+    it('Passing an empty array should throw Error with the message \'The passed array contains no elements.\'', () => {
       expect(() => {
         statistics.median([])
       }).to.throw(Error).and
         .to.have.property('message', 'The passed array contains no elements.')
     })
 
-    it(`Passing an array of not just numbers should throw TypeError with the message 'The passed array contains not just numbers.'`, () => {
+    it('Passing an array of not just numbers should throw TypeError with the message \'The passed array contains not just numbers.\'', () => {
       expect(() => {
         statistics.median([1, 2, 3, '4'])
       }).to.throw(TypeError).and
@@ -138,8 +138,8 @@ describe('statistics', () => {
 
     // no effect on the argument
     it('Passing an array with numbers should not modify the passed array returning a number', () => {
-      let arg = [4, 2, 6, 1, 3, 7, 5, 3]
-      let res = statistics.median(arg)
+      const arg = [4, 2, 6, 1, 3, 7, 5, 3]
+      const res = statistics.median(arg)
       expect(res).to.be.an('number')
       expect(arg).to.eql([4, 2, 6, 1, 3, 7, 5, 3])
     })
@@ -157,7 +157,7 @@ describe('statistics', () => {
   // ------------------------------------------------------------------ minimum
   describe('#minimum()', () => {
     // exceptions
-    it(`Passing anything but an array should throw TypeError with the message 'The passed argument is not an array.'`, () => {
+    it('Passing anything but an array should throw TypeError with the message \'The passed argument is not an array.\'', () => {
       expect(() => {
         statistics.minimum(1)
         statistics.minimum('not an array')
@@ -169,14 +169,14 @@ describe('statistics', () => {
         .to.have.property('message', 'The passed argument is not an array.')
     })
 
-    it(`Passing an empty array should throw Error with the message 'The passed array contains no elements.'`, () => {
+    it('Passing an empty array should throw Error with the message \'The passed array contains no elements.\'', () => {
       expect(() => {
         statistics.minimum([])
       }).to.throw(Error).and
         .to.have.property('message', 'The passed array contains no elements.')
     })
 
-    it(`Passing an array of not just numbers should throw TypeError with the message 'The passed array contains not just numbers.'`, () => {
+    it('Passing an array of not just numbers should throw TypeError with the message \'The passed array contains not just numbers.\'', () => {
       expect(() => {
         statistics.minimum([1, 2, 3, '4'])
       }).to.throw(TypeError).and
@@ -185,8 +185,8 @@ describe('statistics', () => {
 
     // no effect on the argument
     it('Passing an array with numbers should not modify the passed array returning a number', () => {
-      let arg = [4, 2, 6, 1, 3, 7, 5, 3]
-      let res = statistics.minimum(arg)
+      const arg = [4, 2, 6, 1, 3, 7, 5, 3]
+      const res = statistics.minimum(arg)
       expect(res).to.be.an('number')
       expect(arg).to.eql([4, 2, 6, 1, 3, 7, 5, 3])
     })
@@ -204,7 +204,7 @@ describe('statistics', () => {
   // ------------------------------------------------------------------ mode
   describe('#mode()', () => {
     // exceptions
-    it(`Passing anything but an array should throw TypeError with the message 'The passed argument is not an array.'`, () => {
+    it('Passing anything but an array should throw TypeError with the message \'The passed argument is not an array.\'', () => {
       expect(() => {
         statistics.mode(1)
         statistics.mode('not an array')
@@ -216,14 +216,14 @@ describe('statistics', () => {
         .to.have.property('message', 'The passed argument is not an array.')
     })
 
-    it(`Passing an empty array should throw Error with the message 'The passed array contains no elements.'`, () => {
+    it('Passing an empty array should throw Error with the message \'The passed array contains no elements.\'', () => {
       expect(() => {
         statistics.mode([])
       }).to.throw(Error).and
         .to.have.property('message', 'The passed array contains no elements.')
     })
 
-    it(`Passing an array of not just numbers should throw TypeError with the message 'The passed array contains not just numbers.'`, () => {
+    it('Passing an array of not just numbers should throw TypeError with the message \'The passed array contains not just numbers.\'', () => {
       expect(() => {
         statistics.mode([1, 2, 3, '4'])
       }).to.throw(TypeError).and
@@ -232,8 +232,8 @@ describe('statistics', () => {
 
     // no effect on the argument
     it('Passing an array with numbers should not modify the passed array returning an array', () => {
-      let arg = [4, 2, 6, 1, 3, 7, 5, 3]
-      let res = statistics.mode(arg)
+      const arg = [4, 2, 6, 1, 3, 7, 5, 3]
+      const res = statistics.mode(arg)
       expect(res).to.be.an('array')
       expect(arg).to.eql([4, 2, 6, 1, 3, 7, 5, 3])
     })
@@ -269,7 +269,7 @@ describe('statistics', () => {
   // ------------------------------------------------------------------ range
   describe('#range()', () => {
     // exceptions
-    it(`Passing anything but an array should throw TypeError with the message 'The passed argument is not an array.'`, () => {
+    it('Passing anything but an array should throw TypeError with the message \'The passed argument is not an array.\'', () => {
       expect(() => {
         statistics.range(1)
         statistics.range('not an array')
@@ -281,14 +281,14 @@ describe('statistics', () => {
         .to.have.property('message', 'The passed argument is not an array.')
     })
 
-    it(`Passing an empty array should throw Error with the message 'The passed array contains no elements.'`, () => {
+    it('Passing an empty array should throw Error with the message \'The passed array contains no elements.\'', () => {
       expect(() => {
         statistics.range([])
       }).to.throw(Error).and
         .to.have.property('message', 'The passed array contains no elements.')
     })
 
-    it(`Passing an array of not just numbers should throw TypeError with the message 'The passed array contains not just numbers.'`, () => {
+    it('Passing an array of not just numbers should throw TypeError with the message \'The passed array contains not just numbers.\'', () => {
       expect(() => {
         statistics.range([1, 2, 3, '4'])
       }).to.throw(TypeError).and
@@ -297,8 +297,8 @@ describe('statistics', () => {
 
     // no effect on the argument
     it('Passing an array with numbers should not modify the passed array returning a number', () => {
-      let arg = [4, 2, 6, 1, 3, 7, 5, 3]
-      let res = statistics.range(arg)
+      const arg = [4, 2, 6, 1, 3, 7, 5, 3]
+      const res = statistics.range(arg)
       expect(res).to.be.an('number')
       expect(arg).to.eql([4, 2, 6, 1, 3, 7, 5, 3])
     })
@@ -316,7 +316,7 @@ describe('statistics', () => {
   // ------------------------------------------------------------------ standardDeviation
   describe('#standardDeviation()', () => {
     // exceptions
-    it(`Passing anything but an array should throw TypeError with the message 'The passed argument is not an array.'`, () => {
+    it('Passing anything but an array should throw TypeError with the message \'The passed argument is not an array.\'', () => {
       expect(() => {
         statistics.standardDeviation(1)
         statistics.standardDeviation('not an array')
@@ -328,14 +328,14 @@ describe('statistics', () => {
         .to.have.property('message', 'The passed argument is not an array.')
     })
 
-    it(`Passing an empty array should throw Error with the message 'The passed array contains no elements.'`, () => {
+    it('Passing an empty array should throw Error with the message \'The passed array contains no elements.\'', () => {
       expect(() => {
         statistics.standardDeviation([])
       }).to.throw(Error).and
         .to.have.property('message', 'The passed array contains no elements.')
     })
 
-    it(`Passing an array of not just numbers should throw TypeError with the message 'The passed array contains not just numbers.'`, () => {
+    it('Passing an array of not just numbers should throw TypeError with the message \'The passed array contains not just numbers.\'', () => {
       expect(() => {
         statistics.standardDeviation([1, 2, 3, '4'])
       }).to.throw(TypeError).and
@@ -344,8 +344,8 @@ describe('statistics', () => {
 
     // no effect on the argument
     it('Passing an array with numbers should not modify the passed array returning a number', () => {
-      let arg = [4, 2, 6, 1, 3, 7, 5, 3]
-      let res = statistics.standardDeviation(arg)
+      const arg = [4, 2, 6, 1, 3, 7, 5, 3]
+      const res = statistics.standardDeviation(arg)
       expect(res).to.be.an('number')
       expect(arg).to.eql([4, 2, 6, 1, 3, 7, 5, 3])
     })
@@ -363,7 +363,7 @@ describe('statistics', () => {
   // ------------------------------------------------------------------ descriptiveStatistics
   describe('#descriptiveStatistics()', () => {
     // exceptions
-    it(`Passing anything but an array should throw TypeError with the message 'The passed argument is not an array.'`, () => {
+    it('Passing anything but an array should throw TypeError with the message \'The passed argument is not an array.\'', () => {
       expect(() => {
         statistics.descriptiveStatistics(1)
         statistics.descriptiveStatistics('not an array')
@@ -375,14 +375,14 @@ describe('statistics', () => {
         .to.have.property('message', 'The passed argument is not an array.')
     })
 
-    it(`Passing an empty array should throw Error with the message 'The passed array contains no elements.'`, () => {
+    it('Passing an empty array should throw Error with the message \'The passed array contains no elements.\'', () => {
       expect(() => {
         statistics.descriptiveStatistics([])
       }).to.throw(Error).and
         .to.have.property('message', 'The passed array contains no elements.')
     })
 
-    it(`Passing an array of not just numbers should throw TypeError with the message 'The passed array contains not just numbers.'`, () => {
+    it('Passing an array of not just numbers should throw TypeError with the message \'The passed array contains not just numbers.\'', () => {
       expect(() => {
         statistics.descriptiveStatistics([1, 2, 3, '4'])
       }).to.throw(TypeError).and
@@ -391,8 +391,8 @@ describe('statistics', () => {
 
     // no effect on the argument
     it('Passing an array with numbers should not modify the passed array returning an object', () => {
-      let arg = [4, 2, 6, 1, 3, 7, 5, 3]
-      let res = statistics.descriptiveStatistics(arg)
+      const arg = [4, 2, 6, 1, 3, 7, 5, 3]
+      const res = statistics.descriptiveStatistics(arg)
       expect(res).to.be.an('object') // .that.includes({ maximum: 7 })
       expect(arg).to.eql([4, 2, 6, 1, 3, 7, 5, 3])
     })
