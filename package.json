@@ -19,10 +19,10 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "chai": "^4.2.0",
-    "mocha": "^6.2.0",
-    "snazzy": "^8.0.0",
-    "standard": "^14.1.0"
+    "chai": "*",
+    "mocha": "*",
+    "snazzy": "*",
+    "standard": "*"
   },
   "directories": {
     "test": "test"
@@ -32,6 +32,16 @@
     "lint": "standard | snazzy",
     "lint:fix": "standard --fix",
     "start": "node app.js",
-    "test": "mocha --recursive ./test --reporter list"
+    "test": "mocha --recursive ./test"
+  },
+  "standard": {
+    "env": {
+      "node": true,
+      "mocha": true,
+      "es6": true
+    },
+    "ignore": [
+      "**/test/"
+    ]
   }
 }
